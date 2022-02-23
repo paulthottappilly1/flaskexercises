@@ -1,0 +1,26 @@
+<!-- Student Name: Paul Thottappilly -->
+<!-- Group Members: Hassan Chughtai, Ivory Steed, Tony Le, Shekar Balasubramaniam -->  
+
+{% extends "layout.html" %}
+{% block title %}Calculate{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<style>
+    .text{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: blue;
+        font-size: large;
+        background-color: black;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<h1 class="text">Calculate</h1>
+{% if name %}
+<h2>{{num}} is {{ name }}</h2>
+{% else %}
+<h2>No number provided! </h2>
+{% endif %}
+<a href="/">HOME</a>
+{% endblock %}

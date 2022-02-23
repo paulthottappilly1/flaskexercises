@@ -1,0 +1,27 @@
+<!-- Student Name: Paul Thottappilly -->
+<!-- Group Members: Hassan Chughtai, Ivory Steed, Tony Le, Shekar Balasubramaniam -->  
+
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<style>
+    .text{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: blue;
+        font-size: large;
+        background-color: black;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<h1 class="text">Home</h1>
+<form action="/calculate">
+    <label for="number">Number:</label><br>
+    <input type="text" id="number" name="number">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+</form> 
+{% endblock %}

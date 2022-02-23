@@ -1,0 +1,22 @@
+<!-- Student Name: Paul Thottappilly -->
+<!-- Group Members: Hassan Chughtai, Ivory Steed, Tony Le, Shekar Balasubramaniam -->  
+
+<html>
+    <head class="text">
+        <style>
+            .text{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: blue;
+                font-size: large;
+                background-color: black;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        {% block head %}
+        <title>{% block title %}{% endblock %} - My Webpage</title>
+        {% endblock %}
+    </head>
+    <body class="text">
+        <div id="content">{% block content %}{% endblock %}</div>
+    </body>
+</html>
